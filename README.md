@@ -15,6 +15,7 @@ A production-ready **Java Fullstack** emergency response and personal safety man
 ## 📌 Table of Contents
 - [Overview](#-overview)
 - [Architecture & Tech Stack](#-architecture--tech-stack)
+- [Application Screenshots](#-application-screenshots)
 - [Core Features](#-core-features)
 - [Fullstack Engineering Highlights](#-fullstack-engineering-highlights)
 - [Database Design](#-database-design)
@@ -80,6 +81,30 @@ SafeLink is engineered to handle mission-critical safety workflows with high rel
 | **Database** | **PostgreSQL 16** (production/docker), **H2 Database** (zero-config local dev) |
 | **AI Microservice** | Python 3.10, FastAPI, Sentence-Transformers (`all-MiniLM-L6-v2`), PyTorch |
 | **DevOps & Containers** | Docker, Docker Compose, Multi-stage builds, Jenkins CI/CD pipeline |
+
+---
+
+## 📸 Application Screenshots
+
+### 1. Geospatial Safety & Hazard Map
+Interactive Leaflet and OpenStreetMap integration showing live user position, verified street hazards, and color-coded risk clusters (`Critical`, `Medium/Caution`, `Infrastructure`).
+![Geospatial Safety & Hazard Map](screenshots/geospatial-safety-map.png)
+
+### 2. Companion Travel Mode
+Peer safety groups enabling commuters along overlapping transit routes to pair with pseudonymized privacy protection and real-time corridor monitoring.
+![Companion Travel Mode](screenshots/companion-travel-mode.png)
+
+### 3. Safe Route & Journey Manager
+Multi-factor route risk assessment, consented live tracking with authorized guardians, and estimated transit duration evaluation.
+![Safe Route & Journey Manager](screenshots/safe-route-journey-manager.png)
+
+### 4. Report Safety Incident or Hazard
+Citizen hazard reporting portal with GPS coordinates auto-capture, category classification, and automated escalation to the AI triage engine.
+![Report Safety Incident or Hazard](screenshots/report-incident.png)
+
+### 5. Community Safety & Intelligence Network
+Crowdsourced community hazard and safe zone alerts with peer confirmation counts and official dispatcher verifications.
+![Community Safety & Intelligence Network](screenshots/community-safety-network.png)
 
 ---
 
@@ -218,6 +243,7 @@ safelink/
 │
 ├── database/                             # Database initialization scripts
 │   └── init.sql
+├── screenshots/                          # Platform UI walkthrough screenshots
 ├── docker-compose.yml                    # Multi-container orchestration
 ├── Jenkinsfile                           # Automated CI/CD build pipeline
 └── README.md
