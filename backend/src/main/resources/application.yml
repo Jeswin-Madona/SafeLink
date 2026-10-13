@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: safelink-backend
+  profiles:
+    active: dev
+
+app:
+  jwt:
+    secret: safelinkEmergencyResponseSecretKeyForJwtTokenGeneration2026SecureMustBe256Bits
+    expiration-ms: 86400000 # 24 hours
+  storage:
+    upload-dir: ./uploads
+  ai-service:
+    url: ${AI_SERVICE_URL:http://localhost:8000}
+
+logging:
+  level:
+    root: INFO
+    com.safelink: DEBUG
+    org.springframework.security: INFO
